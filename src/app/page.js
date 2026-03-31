@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import BlogImage from "@/components/blog/BlogImage";
 import ContributorsSpotlight from "@/components/blog/ContributorsSpotlight";
 import NewsTickerClient from "@/components/blog/NewsTickerClient";
@@ -12,13 +12,8 @@ export const revalidate = 0;
 export const fetchCache = "force-no-store";
 
 export const metadata = {
-<<<<<<< HEAD
   title: "ويكيهيس",
   description: "الصفحة الرئيسية لويكيهيس تعرض أحدث المقالات والتصنيفات بصيغة إخبارية احترافية.",
-=======
-  title: "ويزازو",
-  description: "الصفحة الرئيسية لويزازو تعرض أحدث المقالات والتصنيفات بصيغة إخبارية احترافية.",
->>>>>>> f7c21ba (Rename site to Wikihes and update branding)
   alternates: { canonical: "/" },
 };
 
@@ -850,11 +845,7 @@ export default async function HomePage({ searchParams }) {
           ) : (
             <div className="overflow-hidden border border-white/10">
               <div className="flex items-center justify-between border-b border-white/10 px-4 py-3 text-white">
-<<<<<<< HEAD
                 <h2 className="text-right text-xl font-black">ويكيهيس</h2>
-=======
-                <h2 className="text-right text-xl font-black">ويزازو</h2>
->>>>>>> f7c21ba (Rename site to Wikihes and update branding)
                 <div className="mx-4 hidden min-w-0 flex-1 lg:block">
                   <NewsTickerClient />
                 </div>

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import BlogImage from "@/components/blog/BlogImage";
@@ -74,11 +74,7 @@ function ContributorSpotlightCard({ contributor, compact = false }) {
               </div>
               <div className="min-w-0">
                 <div className={`truncate font-black text-slate-950 ${compact ? "text-lg" : "text-xl"}`}>{contributor.displayName}</div>
-<<<<<<< HEAD
                 <div className="mt-1 text-sm text-slate-600">ناشر معتمد في ويكيهيس</div>
-=======
-                <div className="mt-1 text-sm text-slate-600">ناشر معتمد في ويزازو</div>
->>>>>>> f7c21ba (Rename site to Wikihes and update branding)
               </div>
             </div>
 

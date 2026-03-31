@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import Link from 'next/link';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -352,11 +352,7 @@ export default function Navbar() {
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-3 px-3 py-3 md:hidden">
             <Link href="/" className="text-sm font-black text-slate-900">
-<<<<<<< HEAD
               WIKIHES
-=======
-              WIZAZO
->>>>>>> f7c21ba (Rename site to Wikihes and update branding)
             </Link>
             <button
               type="button"
@@ -554,11 +550,7 @@ export default function Navbar() {
               </div>
 
               <div className="border-r border-slate-200 bg-[linear-gradient(180deg,#f8fafc_0%,#fff_100%)] p-6 text-right">
-<<<<<<< HEAD
                 <div className="text-xs font-extrabold tracking-[0.18em] text-red-700">WIKIHES</div>
-=======
-                <div className="text-xs font-extrabold tracking-[0.18em] text-red-700">WIZAZO</div>
->>>>>>> f7c21ba (Rename site to Wikihes and update branding)
                 <h3 className="mt-3 text-2xl font-black text-slate-950">{activeMegaLink.label}</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-600">{activeMegaLink.summary}</p>
                 <Link

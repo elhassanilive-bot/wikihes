@@ -1,24 +1,16 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { site } from '@/config/site';
 
 const exploreLinks = [
   { href: '/', label: 'الرئيسية' },
   { href: '/sections', label: 'أقسام الموقع' },
-<<<<<<< HEAD
   { href: '/features', label: 'كيف يعمل ويكيهيس' },
-=======
-  { href: '/features', label: 'كيف يعمل ويزازو' },
->>>>>>> f7c21ba (Rename site to Wikihes and update branding)
   { href: '/contributors', label: 'المساهمون' },
   { href: '/faq', label: 'مركز المساعدة' },
 ];
 
 const newsroomLinks = [
-<<<<<<< HEAD
   { href: '/about', label: 'عن ويكيهيس' },
-=======
-  { href: '/about', label: 'عن ويزازو' },
->>>>>>> f7c21ba (Rename site to Wikihes and update branding)
   { href: '/editorial-policy', label: 'السياسة التحريرية' },
   { href: '/corrections-policy', label: 'سياسة التصحيحات' },
   { href: '/contribute', label: 'النشر كمساهم' },

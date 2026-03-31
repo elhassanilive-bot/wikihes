@@ -13,19 +13,11 @@ export const metadata = {
   description: site.description,
   icons: {
     icon: [
-<<<<<<< HEAD
       { url: "/icon.png?v=20260331", type: "image/png", sizes: "32x32" },
       { url: "/icon.png?v=20260331", type: "image/png", sizes: "192x192" },
     ],
     apple: [{ url: "/apple-touch-icon.png?v=20260331", sizes: "180x180", type: "image/png" }],
     shortcut: ["/icon.png?v=20260331"],
-=======
-      { url: "/icon.png", type: "image/png", sizes: "32x32" },
-      { url: "/icon.png", type: "image/png", sizes: "192x192" },
-    ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
-    shortcut: ["/icon.png"],
->>>>>>> f7c21ba (Rename site to Wikihes and update branding)
   },
   alternates: {
     canonical: "/",

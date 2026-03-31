@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
@@ -13,11 +13,7 @@ import { formatArabicDate } from "@/lib/blog/render";
 const EMPTY_CONTENT = "<p></p>";
 const BLOG_MEDIA_BUCKET = process.env.NEXT_PUBLIC_SUPABASE_BLOG_BUCKET || "blog-media";
 const POSTS_PER_PAGE = 10;
-<<<<<<< HEAD
 const DRAFT_STORAGE_PREFIX = "WIKIHES:contrib_draft:";
-=======
-const DRAFT_STORAGE_PREFIX = "WIZAZO:contrib_draft:";
->>>>>>> f7c21ba (Rename site to Wikihes and update branding)
 const CONTRIBUTOR_PRIMARY_CATEGORIES = [
   "الصحة واللياقة",
   "الأخبار",
@@ -553,11 +549,7 @@ export default function ContributorHub({ contributors = [], categoryTree = [] })
       <section className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-[0_30px_80px_-45px_rgba(15,23,42,0.35)] sm:p-8">
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 pb-5">
           <div className="text-right">
-<<<<<<< HEAD
             <div className="text-xs font-extrabold tracking-[0.2em] text-red-700">WIKIHES CONTRIBUTORS</div>
-=======
-            <div className="text-xs font-extrabold tracking-[0.2em] text-red-700">WIZAZO CONTRIBUTORS</div>
->>>>>>> f7c21ba (Rename site to Wikihes and update branding)
             <h1 className="mt-2 text-3xl font-black text-slate-950">المساهمون</h1>
             <p className="mt-3 max-w-3xl text-sm leading-8 text-slate-600">يعرض هذا القسم جميع الناشرين في الموقع، ومع تسجيل الدخول يمكن لأي مساهم إرسال مقاله للمراجعة قبل النشر العام.</p>
           </div>
