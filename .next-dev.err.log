@@ -1,0 +1,649 @@
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ ./src/components/blog/ArticleComments.js
+Error:   x Expression expected
+     ,-[C:\D - Project-Web\Arzapress\src\components\blog\ArticleComments.js:312:1]
+ 309 |           ) : null}
+ 310 |         </div>
+ 311 | 
+ 312 |       </div>
+     :       ^
+ 313 |     </article>
+ 314 |   );
+ 315 | }
+     `----
+  x Unterminated regexp literal
+     ,-[C:\D - Project-Web\Arzapress\src\components\blog\ArticleComments.js:312:1]
+ 309 |           ) : null}
+ 310 |         </div>
+ 311 | 
+ 312 |       </div>
+     :        ^^^^^
+ 313 |     </article>
+ 314 |   );
+ 315 | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/blog/ArticleComments.js
+./src/app/blog/[slug]/page.js
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ ./src/components/blog/ArticleComments.js
+Error:   x Expression expected
+     ,-[C:\D - Project-Web\Arzapress\src\components\blog\ArticleComments.js:312:1]
+ 309 |           ) : null}
+ 310 |         </div>
+ 311 | 
+ 312 |       </div>
+     :       ^
+ 313 |     </article>
+ 314 |   );
+ 315 | }
+     `----
+  x Unterminated regexp literal
+     ,-[C:\D - Project-Web\Arzapress\src\components\blog\ArticleComments.js:312:1]
+ 309 |           ) : null}
+ 310 |         </div>
+ 311 | 
+ 312 |       </div>
+     :        ^^^^^
+ 313 |     </article>
+ 314 |   );
+ 315 | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/blog/ArticleComments.js
+./src/app/blog/[slug]/page.js
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ ./src/components/blog/ArticleComments.js
+Error:   x Expression expected
+     ,-[C:\D - Project-Web\Arzapress\src\components\blog\ArticleComments.js:312:1]
+ 309 |           ) : null}
+ 310 |         </div>
+ 311 | 
+ 312 |       </div>
+     :       ^
+ 313 |     </article>
+ 314 |   );
+ 315 | }
+     `----
+  x Unterminated regexp literal
+     ,-[C:\D - Project-Web\Arzapress\src\components\blog\ArticleComments.js:312:1]
+ 309 |           ) : null}
+ 310 |         </div>
+ 311 | 
+ 312 |       </div>
+     :        ^^^^^
+ 313 |     </article>
+ 314 |   );
+ 315 | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/blog/ArticleComments.js
+./src/app/blog/[slug]/page.js
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\D - Project-Web\Arzapress\.next\dev\cache\webpack\client-development-fallback\0.pack.gz_' -> 'C:\D - Project-Web\Arzapress\.next\dev\cache\webpack\client-development-fallback\0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\D - Project-Web\Arzapress\.next\dev\cache\webpack\client-development-fallback\0.pack.gz_' -> 'C:\D - Project-Web\Arzapress\.next\dev\cache\webpack\client-development-fallback\0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\D - Project-Web\Arzapress\.next\dev\cache\webpack\client-development-fallback\0.pack.gz_' -> 'C:\D - Project-Web\Arzapress\.next\dev\cache\webpack\client-development-fallback\0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\D - Project-Web\Arzapress\.next\dev\cache\webpack\client-development-fallback\0.pack.gz_' -> 'C:\D - Project-Web\Arzapress\.next\dev\cache\webpack\client-development-fallback\0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\D - Project-Web\Arzapress\.next\dev\cache\webpack\client-development-fallback\0.pack.gz_' -> 'C:\D - Project-Web\Arzapress\.next\dev\cache\webpack\client-development-fallback\0.pack.gz'
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ ./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+
+./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+⚠ ./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+
+./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+⚠ ./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+
+./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+⚠ ./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+
+./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+⚠ ./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+
+./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+⚠ ./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+
+./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+⚠ ./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+
+./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+⚠ ./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+
+./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+⚠ ./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+
+./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+⚠ ./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+
+./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+⚠ ./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+
+./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+⚠ ./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+
+./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+⚠ ./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+
+./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+⚠ ./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+
+./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+⚠ ./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+
+./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+⚠ ./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+
+./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+⚠ ./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+
+./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+⚠ ./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+
+./src/components/blog/RichTextEditorField.js
+Attempted import error: '@tiptap/extension-text-style' does not contain a default export (imported as 'TextStyle').
+
+Import trace for requested module:
+./src/components/blog/RichTextEditorField.js
+./src/components/blog/ContributorHub.js
+⨯ ./src/components/blog/ContributorsSpotlight.js
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\D - Project-Web\Arzapress\src\components\blog\ContributorsSpotlight.js
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./src/components/blog/ContributorsSpotlight.js
+./src/components/blog/ContributorHub.js
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⨯ ./src/components/account/AccountSettingsShell.js
+Error:   x Unterminated string constant
+     ,-[C:\D - Project-Web\Arzapress\src\components\account\AccountSettingsShell.js:674:1]
+ 671 |                                         <div className="relative h-9 w-9 overflow-hidden rounded-full border border-slate-200 bg-slate-100">
+ 672 |                                           <BlogImage
+ 673 |                                             src={reply.user_profiles.avatar_url}
+ 674 |                                             alt={reply.user_profiles.display_name || \"Avatar\"}
+     :                                                                                       ^^^^^^^^^^
+ 675 |                                             fill
+ 676 |                                             sizes=\"36px\"
+ 677 |                                             className=\"h-full w-full object-cover\"
+     `----
+  x Expected unicode escape
+     ,-[C:\D - Project-Web\Arzapress\src\components\account\AccountSettingsShell.js:674:1]
+ 671 |                                         <div className="relative h-9 w-9 overflow-hidden rounded-full border border-slate-200 bg-slate-100">
+ 672 |                                           <BlogImage
+ 673 |                                             src={reply.user_profiles.avatar_url}
+ 674 |                                             alt={reply.user_profiles.display_name || \"Avatar\"}
+     :                                                                                      ^
+ 675 |                                             fill
+ 676 |                                             sizes=\"36px\"
+ 677 |                                             className=\"h-full w-full object-cover\"
+     `----
+  x Expected '</', got 'string literal'
+     ,-[C:\D - Project-Web\Arzapress\src\components\account\AccountSettingsShell.js:674:1]
+ 671 |                                         <div className="relative h-9 w-9 overflow-hidden rounded-full border border-slate-200 bg-slate-100">
+ 672 |                                           <BlogImage
+ 673 |                                             src={reply.user_profiles.avatar_url}
+ 674 |                                             alt={reply.user_profiles.display_name || \"Avatar\"}
+     :                                                                                       ^^^^^^^^^^
+ 675 |                                             fill
+ 676 |                                             sizes=\"36px\"
+ 677 |                                             className=\"h-full w-full object-cover\"
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/account/AccountSettingsShell.js
+./src/app/account/page.js
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⨯ ./src/components/account/AccountSettingsShell.js
+Error:   x Unterminated string constant
+     ,-[C:\D - Project-Web\Arzapress\src\components\account\AccountSettingsShell.js:676:1]
+ 673 |                                             src={reply.user_profiles.avatar_url}
+ 674 |                                             alt={reply.user_profiles.display_name || "Avatar"}
+ 675 |                                             fill
+ 676 |                                             sizes=\"36px\"
+     :                                                    ^^^^^^^
+ 677 |                                             className=\"h-full w-full object-cover\"
+ 678 |                                           />
+ 679 |                                         </div>
+     `----
+  x Expected unicode escape
+     ,-[C:\D - Project-Web\Arzapress\src\components\account\AccountSettingsShell.js:676:1]
+ 673 |                                             src={reply.user_profiles.avatar_url}
+ 674 |                                             alt={reply.user_profiles.display_name || "Avatar"}
+ 675 |                                             fill
+ 676 |                                             sizes=\"36px\"
+     :                                                   ^
+ 677 |                                             className=\"h-full w-full object-cover\"
+ 678 |                                           />
+ 679 |                                         </div>
+     `----
+  x Expected '</', got 'string literal'
+     ,-[C:\D - Project-Web\Arzapress\src\components\account\AccountSettingsShell.js:676:1]
+ 673 |                                             src={reply.user_profiles.avatar_url}
+ 674 |                                             alt={reply.user_profiles.display_name || "Avatar"}
+ 675 |                                             fill
+ 676 |                                             sizes=\"36px\"
+     :                                                    ^^^^^^^
+ 677 |                                             className=\"h-full w-full object-cover\"
+ 678 |                                           />
+ 679 |                                         </div>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/account/AccountSettingsShell.js
+./src/app/account/page.js
+⨯ ./src/components/account/AccountSettingsShell.js
+Error:   x Unterminated string constant
+     ,-[C:\D - Project-Web\Arzapress\src\components\account\AccountSettingsShell.js:676:1]
+ 673 |                                             src={reply.user_profiles.avatar_url}
+ 674 |                                             alt={reply.user_profiles.display_name || "Avatar"}
+ 675 |                                             fill
+ 676 |                                             sizes=\"36px\"
+     :                                                    ^^^^^^^
+ 677 |                                             className=\"h-full w-full object-cover\"
+ 678 |                                           />
+ 679 |                                         </div>
+     `----
+  x Expected unicode escape
+     ,-[C:\D - Project-Web\Arzapress\src\components\account\AccountSettingsShell.js:676:1]
+ 673 |                                             src={reply.user_profiles.avatar_url}
+ 674 |                                             alt={reply.user_profiles.display_name || "Avatar"}
+ 675 |                                             fill
+ 676 |                                             sizes=\"36px\"
+     :                                                   ^
+ 677 |                                             className=\"h-full w-full object-cover\"
+ 678 |                                           />
+ 679 |                                         </div>
+     `----
+  x Expected '</', got 'string literal'
+     ,-[C:\D - Project-Web\Arzapress\src\components\account\AccountSettingsShell.js:676:1]
+ 673 |                                             src={reply.user_profiles.avatar_url}
+ 674 |                                             alt={reply.user_profiles.display_name || "Avatar"}
+ 675 |                                             fill
+ 676 |                                             sizes=\"36px\"
+     :                                                    ^^^^^^^
+ 677 |                                             className=\"h-full w-full object-cover\"
+ 678 |                                           />
+ 679 |                                         </div>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/account/AccountSettingsShell.js
+./src/app/account/page.js
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⨯ ./src/components/account/AccountSettingsShell.js
+Error:   x Unterminated string constant
+     ,-[C:\D - Project-Web\Arzapress\src\components\account\AccountSettingsShell.js:677:1]
+ 674 |                                             alt={reply.user_profiles.display_name || "Avatar"}
+ 675 |                                             fill
+ 676 |                                             sizes="36px"
+ 677 |                                             className=\"h-full w-full object-cover\"
+     :                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 678 |                                           />
+ 679 |                                         </div>
+ 680 |                                       ) : (
+     `----
+  x Expected unicode escape
+     ,-[C:\D - Project-Web\Arzapress\src\components\account\AccountSettingsShell.js:677:1]
+ 674 |                                             alt={reply.user_profiles.display_name || "Avatar"}
+ 675 |                                             fill
+ 676 |                                             sizes="36px"
+ 677 |                                             className=\"h-full w-full object-cover\"
+     :                                                       ^
+ 678 |                                           />
+ 679 |                                         </div>
+ 680 |                                       ) : (
+     `----
+  x Expected '</', got 'string literal'
+     ,-[C:\D - Project-Web\Arzapress\src\components\account\AccountSettingsShell.js:677:1]
+ 674 |                                             alt={reply.user_profiles.display_name || "Avatar"}
+ 675 |                                             fill
+ 676 |                                             sizes="36px"
+ 677 |                                             className=\"h-full w-full object-cover\"
+     :                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 678 |                                           />
+ 679 |                                         </div>
+ 680 |                                       ) : (
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/account/AccountSettingsShell.js
+./src/app/account/page.js
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⨯ ./src/components/account/AccountSettingsShell.js
+Error:   x Unterminated string constant
+     ,-[C:\D - Project-Web\Arzapress\src\components\account\AccountSettingsShell.js:681:1]
+ 678 |                                           />
+ 679 |                                         </div>
+ 680 |                                       ) : (
+ 681 |                                         <div className=\"flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-slate-100 text-xs font-black text-slate-500\">
+     :                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 682 |                                           {String(reply.user_profiles?.display_name || \"م\").trim().charAt(0)}
+ 683 |                                         </div>
+ 684 |                                       )}
+     `----
+  x Expected unicode escape
+     ,-[C:\D - Project-Web\Arzapress\src\components\account\AccountSettingsShell.js:681:1]
+ 678 |                                           />
+ 679 |                                         </div>
+ 680 |                                       ) : (
+ 681 |                                         <div className=\"flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-slate-100 text-xs font-black text-slate-500\">
+     :                                                        ^
+ 682 |                                           {String(reply.user_profiles?.display_name || \"م\").trim().charAt(0)}
+ 683 |                                         </div>
+ 684 |                                       )}
+     `----
+  x Expected '</', got 'string literal'
+     ,-[C:\D - Project-Web\Arzapress\src\components\account\AccountSettingsShell.js:681:1]
+ 678 |                                           />
+ 679 |                                         </div>
+ 680 |                                       ) : (
+ 681 |                                         <div className=\"flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-slate-100 text-xs font-black text-slate-500\">
+     :                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 682 |                                           {String(reply.user_profiles?.display_name || \"م\").trim().charAt(0)}
+ 683 |                                         </div>
+ 684 |                                       )}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/account/AccountSettingsShell.js
+./src/app/account/page.js
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⨯ ./src/components/account/AccountSettingsShell.js
+Error:   x Unterminated string constant
+     ,-[C:\D - Project-Web\Arzapress\src\components\account\AccountSettingsShell.js:682:1]
+ 679 |                                         </div>
+ 680 |                                       ) : (
+ 681 |                                         <div className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-slate-100 text-xs font-black text-slate-500">
+ 682 |                                           {String(reply.user_profiles?.display_name || \"م\").trim().charAt(0)}
+     :                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^
+ 683 |                                         </div>
+ 684 |                                       )}
+ 685 |                                       <div className=\"text-sm font-black text-slate-950\">{reply.user_profiles?.display_name || \"مستخدم\"}</div>
+     `----
+  x Expected unicode escape
+     ,-[C:\D - Project-Web\Arzapress\src\components\account\AccountSettingsShell.js:682:1]
+ 679 |                                         </div>
+ 680 |                                       ) : (
+ 681 |                                         <div className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-slate-100 text-xs font-black text-slate-500">
+ 682 |                                           {String(reply.user_profiles?.display_name || \"م\").trim().charAt(0)}
+     :                                                                                        ^
+ 683 |                                         </div>
+ 684 |                                       )}
+ 685 |                                       <div className=\"text-sm font-black text-slate-950\">{reply.user_profiles?.display_name || \"مستخدم\"}</div>
+     `----
+  x Expected '</', got 'string literal'
+     ,-[C:\D - Project-Web\Arzapress\src\components\account\AccountSettingsShell.js:682:1]
+ 679 |                                         </div>
+ 680 |                                       ) : (
+ 681 |                                         <div className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-slate-100 text-xs font-black text-slate-500">
+ 682 |                                           {String(reply.user_profiles?.display_name || \"م\").trim().charAt(0)}
+     :                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^
+ 683 |                                         </div>
+ 684 |                                       )}
+ 685 |                                       <div className=\"text-sm font-black text-slate-950\">{reply.user_profiles?.display_name || \"مستخدم\"}</div>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/account/AccountSettingsShell.js
+./src/app/account/page.js
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 11.12.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.12.0
+npm notice To update run: npm install -g npm@11.12.0
+npm notice
