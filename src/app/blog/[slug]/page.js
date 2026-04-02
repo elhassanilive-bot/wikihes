@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { getPostBySlugDetailed, listPostCategories, listPostsDetailed } from "@/lib/blog/posts";
 import { estimateReadingTime, formatArabicDate } from "@/lib/blog/render";
 import { renderStoredBlogContent } from "@/lib/blog/content";
@@ -319,7 +319,7 @@ export default async function BlogPostPage({ params }) {
             <aside className="border border-slate-200 bg-[#fafafa] p-4 text-right">
               <div className="flex items-center justify-between border-b border-slate-200 pb-3">
                 <div>
-                  <div className="text-[11px] font-extrabold tracking-[0.2em] text-red-700">WIKIHES</div>
+                  <div className="text-[11px] font-extrabold tracking-[0.2em] text-red-700">WIKIHIS</div>
                   <div className="mt-1 text-xl font-black text-slate-950">مقترحات سريعة</div>
                 </div>
                 <span className="h-6 w-1 bg-red-700" />

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
@@ -260,7 +260,7 @@ export default function AuthShell({ initialMode = "signin" }) {
     <section dir="rtl" className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
       <div className="grid overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-[0_35px_90px_-45px_rgba(15,23,42,0.35)] lg:grid-cols-[0.95fr_1.05fr]">
         <div className="bg-[linear-gradient(160deg,#111827_0%,#1f2937_42%,#7f1d1d_100%)] p-8 text-right text-white sm:p-10">
-          <div className="text-xs font-extrabold tracking-[0.22em] text-red-300">WIKIHES ACCOUNT</div>
+          <div className="text-xs font-extrabold tracking-[0.22em] text-red-300">WIKIHIS ACCOUNT</div>
           <h1 className="mt-5 text-4xl font-black leading-[1.4]">جريدة الكترونية متعددة المجالات بكل الأنواع</h1>
           <p className="mt-5 text-base leading-8 text-white/80">
             أنشئ حسابك أو سجل الدخول ثم علّق باسمك وصورتك، واحفظ المقالات وتابع نشاطك من صفحة الحساب.

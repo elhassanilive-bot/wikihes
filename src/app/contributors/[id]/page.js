@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import BlogImage from "@/components/blog/BlogImage";
 import { estimateReadingTime, formatArabicDate } from "@/lib/blog/render";
 import { getContributorPublicProfile } from "@/lib/blog/posts";
@@ -92,7 +92,7 @@ export default async function ContributorProfilePage({ params }) {
           <div className="flex flex-col items-end gap-6 text-right text-white">
             <ContributorAvatar contributor={contributor} />
             <div>
-              <div className="text-xs font-extrabold tracking-[0.22em] text-red-300">WIKIHES WRITER</div>
+              <div className="text-xs font-extrabold tracking-[0.22em] text-red-300">WIKIHIS WRITER</div>
               <h1 className="mt-3 text-4xl font-black">{contributor.displayName}</h1>
               <div className="mt-4 flex flex-wrap justify-end gap-3 text-sm text-white/80">
                 <span>{contributor.postsCount} مقال منشور</span>
