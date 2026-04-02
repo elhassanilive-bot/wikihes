@@ -13,11 +13,11 @@ export const metadata = {
   description: site.description,
   icons: {
     icon: [
-      { url: "/icon.png?v=20260402", type: "image/png", sizes: "32x32" },
-      { url: "/icon.png?v=20260402", type: "image/png", sizes: "192x192" },
+      { url: "/icon.png?v=20260402b", type: "image/png", sizes: "32x32" },
+      { url: "/icon.png?v=20260402b", type: "image/png", sizes: "192x192" },
     ],
-    apple: [{ url: "/apple-touch-icon.png?v=20260402", sizes: "180x180", type: "image/png" }],
-    shortcut: ["/icon.png?v=20260402"],
+    apple: [{ url: "/apple-touch-icon.png?v=20260402b", sizes: "180x180", type: "image/png" }],
+    shortcut: ["/icon.png?v=20260402b"],
   },
   alternates: {
     canonical: "/",
@@ -47,4 +47,5 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
 
