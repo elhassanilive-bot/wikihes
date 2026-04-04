@@ -1,0 +1,11 @@
+﻿{
+  "appId": "com.wikihis.app",
+  "appName": "Wikihis",
+  "webDir": "public",
+  "bundledWebRuntime": false,
+  "server": {
+    "url": "https://wikihes.vercel.app",
+    "cleartext": false
+  }
+}
+

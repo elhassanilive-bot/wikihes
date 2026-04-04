@@ -1,20 +1,29 @@
 ﻿import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import AppFooter from "@/components/AppFooter";
+import PwaRegistration from "@/components/PwaRegistration";
 import { site } from "@/config/site";
 
 export const metadata = {
   metadataBase: new URL(site.url),
   applicationName: site.nameEn,
+  manifest: "/manifest.webmanifest",
   title: {
     default: `${site.name} | ${site.nameEn}`,
     template: `%s | ${site.name}`,
   },
   description: site.description,
+  themeColor: "#111111",
+  appleWebApp: {
+    capable: true,
+    title: site.nameEn,
+    statusBarStyle: "default",
+  },
   icons: {
     icon: [
       { url: "/icon.png?v=20260402b", type: "image/png", sizes: "32x32" },
       { url: "/icon.png?v=20260402b", type: "image/png", sizes: "192x192" },
+      { url: "/icon.png?v=20260402b", type: "image/png", sizes: "512x512" },
     ],
     apple: [{ url: "/apple-touch-icon.png?v=20260402b", sizes: "180x180", type: "image/png" }],
     shortcut: ["/icon.png?v=20260402b"],
@@ -40,12 +49,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
       <body className="min-h-screen bg-background text-foreground font-sans">
+        <PwaRegistration />
         <Navbar />
         <main className="min-h-screen pt-16">{children}</main>
-        <Footer />
+        <AppFooter />
       </body>
     </html>
   );
 }
-
 
