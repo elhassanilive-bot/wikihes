@@ -5,6 +5,8 @@ import { createSlugCandidate } from "@/lib/blog/slug";
 const POST_LIST_COLUMNS =
   "id,slug,title,excerpt,content,cover_image_url,category,category_parent,category_slug,tags,published_at,created_at,updated_at,status,author_user_id,author_display_name,author_avatar_url,reviewed_at,review_note";
 const BLOG_PROJECT_KEY = "wikihes";
+const BLOG_PUBLIC_TABLE = "wikihes_blog_posts";
+const BLOG_WRITE_TABLE = "blog_posts";
 
 export function isBlogEnabled() {
   return isSupabaseConfigured();
@@ -60,7 +62,7 @@ async function ensureUniqueSlug(client, baseSlug, excludeId = null) {
 
   while (attempt < 100) {
     const candidate = attempt === 0 ? fallbackBase : `${fallbackBase}-${attempt + 1}`;
-    let query = client.from("blog_posts").select("id, slug").eq("slug", candidate).eq("project_key", BLOG_PROJECT_KEY);
+    let query = client.from(BLOG_WRITE_TABLE).select("id, slug").eq("slug", candidate).eq("project_key", BLOG_PROJECT_KEY);
 
     if (excludeId) {
       query = query.neq("id", excludeId);
@@ -89,9 +91,8 @@ export async function listPosts({ limit = 20 } = {}) {
   if (!supabase) return [];
 
   const { data, error } = await supabase
-    .from("blog_posts")
+    .from(BLOG_PUBLIC_TABLE)
     .select(POST_LIST_COLUMNS)
-    .eq("project_key", BLOG_PROJECT_KEY)
     .eq("status", "published")
     .order("published_at", { ascending: false })
     .limit(limit);
@@ -113,9 +114,8 @@ export async function listPostsDetailed({ limit = 20, page = 1, category = null 
   const normalizedCategory = String(category || "").trim();
 
   let query = supabase
-    .from("blog_posts")
+    .from(BLOG_PUBLIC_TABLE)
     .select(POST_LIST_COLUMNS, { count: "exact" })
-    .eq("project_key", BLOG_PROJECT_KEY)
     .eq("status", "published");
 
   if (normalizedCategory) {
@@ -156,9 +156,8 @@ export async function listPostCategories() {
   if (!supabase) return { categories: [], error: "Supabase client غير متاح" };
 
   const { data, error } = await supabase
-    .from("blog_posts")
+    .from(BLOG_PUBLIC_TABLE)
     .select("category")
-    .eq("project_key", BLOG_PROJECT_KEY)
     .eq("status", "published")
     .not("category", "is", null)
     .order("published_at", { ascending: false, nullsFirst: false })
@@ -177,7 +176,7 @@ export async function listPostsForAdmin({ limit = 100 } = {}) {
   if (!client) return { posts: [], error: "Supabase client غير متاح" };
 
   const { data, error } = await client
-    .from("blog_posts")
+    .from(BLOG_WRITE_TABLE)
     .select(POST_LIST_COLUMNS)
     .eq("project_key", BLOG_PROJECT_KEY)
     .neq("status", "archived")
@@ -196,9 +195,8 @@ export async function getPostBySlug(slug) {
   if (!supabase) return null;
 
   const { data, error } = await supabase
-    .from("blog_posts")
+    .from(BLOG_PUBLIC_TABLE)
     .select(POST_LIST_COLUMNS)
-    .eq("project_key", BLOG_PROJECT_KEY)
     .eq("slug", slug)
     .eq("status", "published")
     .maybeSingle();
@@ -214,9 +212,8 @@ export async function getPostBySlugDetailed(slug) {
   if (!supabase) return { post: null, error: "Supabase client غير متاح" };
 
   const { data, error } = await supabase
-    .from("blog_posts")
+    .from(BLOG_PUBLIC_TABLE)
     .select(POST_LIST_COLUMNS)
-    .eq("project_key", BLOG_PROJECT_KEY)
     .eq("slug", slug)
     .eq("status", "published")
     .maybeSingle();
@@ -296,7 +293,7 @@ export async function createPost(input) {
   }
 
   const { data, error } = await writer
-    .from("blog_posts")
+    .from(BLOG_WRITE_TABLE)
     .insert({
       project_key: BLOG_PROJECT_KEY,
       slug,
@@ -361,7 +358,7 @@ export async function updatePost(input) {
   }
 
   const { data, error } = await writer
-    .from("blog_posts")
+    .from(BLOG_WRITE_TABLE)
     .update({
       slug,
       title: normalized.title,
@@ -405,7 +402,7 @@ export async function deletePost(id) {
     return { ok: false, error: "Supabase client is not available" };
   }
 
-  const { error } = await writer.from("blog_posts").delete().eq("id", postId).eq("project_key", BLOG_PROJECT_KEY);
+  const { error } = await writer.from(BLOG_WRITE_TABLE).delete().eq("id", postId).eq("project_key", BLOG_PROJECT_KEY);
 
   if (!error) {
     return { ok: true, deleted: true };
@@ -417,7 +414,7 @@ export async function deletePost(id) {
   }
 
   const { error: archiveError } = await writer
-    .from("blog_posts")
+    .from(BLOG_WRITE_TABLE)
     .update({
       status: "archived",
       published_at: null,
@@ -473,9 +470,8 @@ export async function listContributorsPublic({ limit = 60 } = {}) {
   if (!supabase) return { contributors: [], error: "Supabase client غير متاح" };
 
   const { data, error } = await supabase
-    .from("blog_posts")
+    .from(BLOG_PUBLIC_TABLE)
     .select("id, author_user_id, author_display_name, author_avatar_url, published_at, created_at")
-    .eq("project_key", BLOG_PROJECT_KEY)
     .eq("status", "published")
     .not("author_user_id", "is", null)
     .order("published_at", { ascending: false, nullsFirst: false })
@@ -521,7 +517,7 @@ export async function listMemberPostsForAdmin({ limit = 120 } = {}) {
   if (!client) return { posts: [], error: "Supabase client غير متاح" };
 
   const { data, error } = await client
-    .from("blog_posts")
+    .from(BLOG_WRITE_TABLE)
     .select(POST_LIST_COLUMNS)
     .eq("project_key", BLOG_PROJECT_KEY)
     .not("author_user_id", "is", null)
@@ -550,7 +546,7 @@ export async function reviewMemberPost({ id, decision, reviewNote = "" }) {
   };
 
   const { data, error } = await client
-    .from("blog_posts")
+    .from(BLOG_WRITE_TABLE)
     .update(payload)
     .eq("id", postId)
     .eq("project_key", BLOG_PROJECT_KEY)
@@ -582,9 +578,8 @@ export async function getContributorPublicProfile(authorUserId, { limit = 24 } =
   }
 
   const { data, error } = await supabase
-    .from("blog_posts")
+    .from(BLOG_PUBLIC_TABLE)
     .select(POST_LIST_COLUMNS)
-    .eq("project_key", BLOG_PROJECT_KEY)
     .eq("status", "published")
     .eq("author_user_id", normalizedAuthorId)
     .order("published_at", { ascending: false, nullsFirst: false })
