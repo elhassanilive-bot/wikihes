@@ -12,6 +12,7 @@ import { formatArabicDate } from "@/lib/blog/render";
 
 const EMPTY_CONTENT = "<p></p>";
 const BLOG_MEDIA_BUCKET = process.env.NEXT_PUBLIC_SUPABASE_BLOG_BUCKET || "blog-media";
+const BLOG_PROJECT_KEY = "wikihes";
 const POSTS_PER_PAGE = 10;
 const DRAFT_STORAGE_PREFIX = "WIKIHIS:contrib_draft:";
 const CONTRIBUTOR_PRIMARY_CATEGORIES = [
@@ -162,6 +163,7 @@ export default function ContributorHub({ contributors = [], categoryTree = [] })
     const { data, error: ownPostsError, count } = await supabase
       .from("blog_posts")
       .select("id, slug, title, excerpt, status, created_at, published_at, review_note, category, category_parent", { count: "exact" })
+      .eq("project_key", BLOG_PROJECT_KEY)
       .eq("author_user_id", currentUserId)
       .order("created_at", { ascending: false })
       .range(from, to);
@@ -322,6 +324,7 @@ export default function ContributorHub({ contributors = [], categoryTree = [] })
         .from("blog_posts")
         .select("id, slug, title, excerpt, content, cover_image_url, category, category_parent, tags, status")
         .eq("id", postId)
+        .eq("project_key", BLOG_PROJECT_KEY)
         .eq("author_user_id", session.user.id)
         .maybeSingle();
 
@@ -470,6 +473,7 @@ export default function ContributorHub({ contributors = [], categoryTree = [] })
       );
 
       const payload = {
+        project_key: BLOG_PROJECT_KEY,
         title: form.title,
         excerpt: form.excerpt,
         content: form.content,
@@ -487,7 +491,7 @@ export default function ContributorHub({ contributors = [], categoryTree = [] })
       };
 
       const writeResult = editingPostId
-        ? await supabase.from("blog_posts").update(payload).eq("id", editingPostId).eq("author_user_id", session.user.id)
+        ? await supabase.from("blog_posts").update(payload).eq("id", editingPostId).eq("project_key", BLOG_PROJECT_KEY).eq("author_user_id", session.user.id)
         : await supabase.from("blog_posts").insert({ ...payload, slug });
 
       const insertError = writeResult.error;
@@ -528,7 +532,7 @@ export default function ContributorHub({ contributors = [], categoryTree = [] })
       const supabase = await getSupabaseClient();
       if (!supabase || !session?.user) throw new Error("يجب تسجيل الدخول أولًا.");
 
-      const { error: deleteError } = await supabase.from("blog_posts").delete().eq("id", postId).eq("author_user_id", session.user.id);
+      const { error: deleteError } = await supabase.from("blog_posts").delete().eq("id", postId).eq("project_key", BLOG_PROJECT_KEY).eq("author_user_id", session.user.id);
       if (deleteError) throw deleteError;
 
       setMessage("تم حذف مقالتك بنجاح.");

@@ -6,6 +6,8 @@ import { useRouter } from "next/navigation";
 import { formatArabicDate } from "@/lib/blog/render";
 import { getSupabaseClient } from "@/lib/supabase/client";
 
+const BLOG_PROJECT_KEY = "wikihes";
+
 function ModerationBadge({ status }) {
   const toneMap = {
     pending: "border-amber-200 bg-amber-50 text-amber-700",
@@ -52,6 +54,7 @@ export default function MemberArticlesModerationPanel() {
       const { data, error } = await supabase
         .from("blog_posts")
         .select("id, slug, title, excerpt, status, created_at, published_at, author_display_name, review_note")
+        .eq("project_key", BLOG_PROJECT_KEY)
         .not("author_user_id", "is", null)
         .order("created_at", { ascending: false });
 
@@ -86,7 +89,7 @@ export default function MemberArticlesModerationPanel() {
           published_at: decision === "approve" ? new Date().toISOString() : null,
         };
 
-        const { error } = await supabase.from("blog_posts").update(payload).eq("id", id);
+        const { error } = await supabase.from("blog_posts").update(payload).eq("id", id).eq("project_key", BLOG_PROJECT_KEY);
 
         if (error) {
           setFlash(error.message || "تعذر تحديث حالة المقال.");
